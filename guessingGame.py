@@ -21,3 +21,7 @@ while attempts<10:
             attempts +=1
         else:
             raise AssertionError("What is this lol")
+
+if attempts==10:
+    print("wow you're bad at this")
+    print ("the answer was", numberToGuess)
