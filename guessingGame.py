@@ -5,11 +5,13 @@ attempts = 0
 
 while attempts<10:
     try:
-        myGuess = input("Guess a number between 1 and 100: ")
+        myGuess = input("Guess an integer between 1 and 100: ")
         val = int(myGuess)
     except ValueError:
         print("That is not a number smfh bruh")
     else:
+        if val>100 or val<1:
+            print("Reading isn't that hard lol... you're not even in bounds")
         if val == numberToGuess:
             print("you got it!")
             break;
